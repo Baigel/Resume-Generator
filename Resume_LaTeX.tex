@@ -1,0 +1,146 @@
+
+%--------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%--------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+% Import the file containing all the variables (and the cover letter body)
+\input \jobname.company
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color
+
+% Import Packages
+\usepackage{fontawesome}
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+\usepackage{chngpage}
+\usepackage{ragged2e}
+\usepackage[super]{nth}
+\usepackage{tikz}
+\usepackage{mathptmx}
+\usepackage[11pt]{moresize}
+
+% Document Settings 
+\setlength{\hintscolumnwidth}{30mm} % Uncomment to change the width of the dates column
+
+% Define Macros
+\def\nl{\vspace{\baselineskip}}
+\newcommand{\bd}{\textbf}
+
+% Personal Info
+\firstname{Charlie} % Your first name
+\familyname{Chbosky} % Your last name
+\mobile{+1 555 555 555}
+\email{charlie@wallflower.com}
+\homepage{https://www.linkedin.com/in/charliewf/}
+
+\setlength{\columnsep}{1cm}
+
+\begin{document}
+
+%--------------------------------------------------------------------------------------
+%	COVER LETTER
+%--------------------------------------------------------------------------------------
+
+\clearpage
+
+\recipient{\hiringManager}{{\normalfont \hiringManagerTitle\\ \department}\\ \companyName\\ \companyAddress,\ \suburb, \state\ \postcode}
+\date{\today} % Letter date
+\opening{Dear \hiringManagerDear,} % Opening greeting
+\closing{Yours faithfully,} % Closing phrase
+%\enclosure[Attached]{ Resume } % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\justifying{
+\customLetter
+\makeletterclosing % Print letter signature
+\newpage
+
+%--------------------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------------------
+%	RESUME
+%--------------------------------------------------------------------------------------
+
+\renewcommand*{\namefont}{\fontsize{25}{40}\mdseries\upshape} % Adjust the font size of name
+\makecvtitle
+
+\vspace*{-0.5cm}
+
+\setlength{\maincolumnwidth}{\linewidth-\leftskip-\rightskip-\separatorcolumnwidth-\hintscolumnwidth}
+
+% ----------------- PROJECTS -----------------
+\section{Projects}
+
+\cventry{Aug'20--Present}{Name of project}{}{}{}{\textbf{Supervisor}: supervisor name\\
+	\textbf{Description}: description.\\}
+
+% ----------------- TECHINICAL SKILLS -----------------
+\section{Technical Skills}
+\renewcommand{\listitemsymbol}{-~}
+{\small
+	\cvitem{Programming Languages}{Python, C, C++, Bash, MATLAB, Mathematica, Assembly, Java, R, Javascript, Go, HTML, Swift, PHP}
+	\cvitem{Operating Systems}{Mac, Linux, Windows}
+	\cvitem{Skills}{\LaTeX, Git, PCB Design, Programming, ...}
+	\par}
+\vspace*{2.5mm}
+
+% ----------------- EDUCATION -----------------
+\section{Education}
+
+\cventry{1829--1834}{Nth Year, Bachelor of ---- (Honours), Majoring in ------ }{}{}{}{\begin{flushleft} University of -----, GPA -.-- \end{flushleft} \vspace*{-2mm} \break \textbf{Areas of Study:} Single and Multivariate Calculus; Circuit Analysis; Programming; PCB Design\\}
+
+\cventry{2000--2005}{Senior Secondary Certificate of Education}{}{}{}{\begin{flushleft} ----- School \break OP -; ATAR --.-- \end{flushleft}}
+\vspace*{2.5mm}
+
+% ----------------- EXPERIENCE -----------------
+\section{Experience}
+
+\cventry{Oct'23--Jun'25}{job title}{}{}{}{description.\\}
+
+% ----------------- CERTIFICATES AND AWARDS -----------------
+\section{Certificates and Awards}
+{\small
+	\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+	
+	\cventry{1912/13 Semester 1}{award title}{}{}{}{institute\\}
+	
+	\par}
+	
+	\iffalse
+% ----------------- LANGUAGES -----------------
+\section{Languages}
+\renewcommand{\listitemsymbol}{-~}
+{\small
+	\cvitem{English}{Native}
+	\cvitem{Spanish}{Fluent}
+	\cvitem{Mandarin}{Fluent}
+	\par}
+\vspace*{2mm}
+\fi
+
+\iffalse
+% ----------------- EXTRACURRICULAR -----------------
+\section{Extracurricular}
+{\small
+	\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+	
+	\cventry{3141/3142 Semester 1}{name of activity}{}{}{}{institute\\}
+	
+	\par}
+\end{comment}
+\fi
+
+% ----------------- REFERENCES -----------------
+\section{References}
+{\small
+	\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+	
+	\cventry{Assoc. Professor Jimmy Recard}{title}{}{}{}{\begin{flushleft} department/institute \break \bd{T:} +1 555 555 556 \bd{M:} +1 555 555 557 \break \bd{E:} \href{mailto:JRecard@institute.edu.uk}{JRecard@institute.edu.uk} \end{flushleft}}
+	\vspace{3mm}
+	
+	\par}
+
+
+\end{document}

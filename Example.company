@@ -1,0 +1,26 @@
+\def\department{<department>}
+\def\companyName{<companyName>}
+\def\companyAddress{<address>}
+\def\suburb{<suburb>}
+\def\state{<state>}
+\def\postcode{<postcode>}
+\def\hiringManager{<hiring manager, full name and title>}
+\def\hiringManagerDear{<hiring manager name>}
+\def\hiringManagerTitle{<hiring manager position>}
+\def\customLetter{
+\noindent I am writing to express my interest in ---. I am available to commence ---.
+
+\vspace*{5pt}
+
+\noindent I am studying --- (with a dual major in Electrical and Biomedical Engineering) at the University of ---, and I expect to graduate in 2125. My GPA is ---.
+
+\vspace*{5pt}
+
+\noindent I am applying for an internship at --- because ---. I have previously worked ---. I am particularly interested in ---. I believe the experience I can gain at --- is unlike any other and will provide me with knowledge and understanding I cannot gain anywhere else.
+
+\vspace*{5pt}
+
+\noindent Thank you for taking the time to read my application. I have enclosed my Resume and latest academic transcript, and I am happy to provide any further information upon request.
+
+\vspace*{5pt}
+}
