@@ -5,7 +5,7 @@ all: compileAll
 all: clean
 
 compileAll:
-	bash ./compileLettersAndResumes.sh
+	bash ./GenerateResumes.sh
 
 clean:
 	bash -c "rm *.out"
