@@ -1,0 +1,9 @@
+# Packages
+pdflatex
+pdftk
+
+# LaTeX Packages
+moderncv
+fontawesome
+nth
+moresize
